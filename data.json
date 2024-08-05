@@ -1,0 +1,343 @@
+{
+    "cities": [
+        {
+            "name": "Madrid",
+            "priority": 1,
+            "location": {
+                "latitud": 40.4168,
+                "longitud": -3.7038
+            }
+        },
+        {
+            "name": "Hanoi",
+            "priority": 2,
+            "location": {
+                "latitud": 21.0285,
+                "longitud": 105.8542
+            }
+        },
+        {
+            "name": "Saigon",
+            "priority": 2,
+            "location": {
+                "latitud": 10.8231,
+                "longitud": 106.6297
+            }
+        },
+        {
+            "name": "Phnom Penh",
+            "priority": 2,
+            "location": {
+                "latitud": 11.5564,
+                "longitud": 104.9282
+            }
+        },
+        {
+            "name": "Bangkok",
+            "priority": 2,
+            "location": {
+                "latitud": 13.7563,
+                "longitud": 100.5018
+            }
+        },
+        {
+            "name": "Vientiane",
+            "priority": 2,
+            "location": {
+                "latitud": 17.9757,
+                "longitud": 102.6331
+            }
+        }
+    ],
+    "flights": [
+        {
+            "origin": "Madrid",
+            "destination": "Hanoi",
+            "prize": 500,
+            "scales": false,
+            "time_spent": 10
+        },
+        {
+            "origin": "Madrid",
+            "destination": "Saigon",
+            "prize": 600,
+            "scales": false,
+            "time_spent": 11
+        },
+        {
+            "origin": "Madrid",
+            "destination": "Phnom Penh",
+            "prize": 650,
+            "scales": false,
+            "time_spent": 12
+        },
+        {
+            "origin": "Madrid",
+            "destination": "Bangkok",
+            "prize": 700,
+            "scales": false,
+            "time_spent": 12
+        },
+        {
+            "origin": "Madrid",
+            "destination": "Vientiane",
+            "prize": 750,
+            "scales": false,
+            "time_spent": 13
+        },
+        {
+            "origin": "Hanoi",
+            "destination": "Madrid",
+            "prize": 500,
+            "scales": false,
+            "time_spent": 10
+        },
+        {
+            "origin": "Saigon",
+            "destination": "Madrid",
+            "prize": 600,
+            "scales": false,
+            "time_spent": 11
+        },
+        {
+            "origin": "Phnom Penh",
+            "destination": "Madrid",
+            "prize": 650,
+            "scales": false,
+            "time_spent": 12
+        },
+        {
+            "origin": "Bangkok",
+            "destination": "Madrid",
+            "prize": 700,
+            "scales": false,
+            "time_spent": 12
+        },
+        {
+            "origin": "Vientiane",
+            "destination": "Madrid",
+            "prize": 750,
+            "scales": false,
+            "time_spent": 13
+        }
+    ],
+    "housing": [
+        {
+            "location": {
+                "latitud": 21.0285,
+                "longitud": 105.8542
+            },
+            "prize_night": 30,
+            "num_nights": 2,
+            "rating": 4.5,
+            "capacity": 2,
+            "distance_to_center": 5
+        },
+        {
+            "location": {
+                "latitud": 10.8231,
+                "longitud": 106.6297
+            },
+            "prize_night": 25,
+            "num_nights": 2,
+            "rating": 4.0,
+            "capacity": 2,
+            "distance_to_center": 4
+        },
+        {
+            "location": {
+                "latitud": 11.5564,
+                "longitud": 104.9282
+            },
+            "prize_night": 20,
+            "num_nights": 2,
+            "rating": 3.5,
+            "capacity": 2,
+            "distance_to_center": 3
+        },
+        {
+            "location": {
+                "latitud": 13.7563,
+                "longitud": 100.5018
+            },
+            "prize_night": 35,
+            "num_nights": 2,
+            "rating": 4.7,
+            "capacity": 2,
+            "distance_to_center": 6
+        },
+        {
+            "location": {
+                "latitud": 17.9757,
+                "longitud": 102.6331
+            },
+            "prize_night": 40,
+            "num_nights": 2,
+            "rating": 4.8,
+            "capacity": 2,
+            "distance_to_center": 7
+        }
+    ],
+    "transportation_methods": [
+        {
+            "origin": "Hanoi",
+            "destination": "Saigon",
+            "transport_method": "flight",
+            "prize": 100,
+            "scales": false,
+            "time_spent": 2
+        },
+        {
+            "origin": "Hanoi",
+            "destination": "Phnom Penh",
+            "transport_method": "flight",
+            "prize": 120,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Hanoi",
+            "destination": "Bangkok",
+            "transport_method": "flight",
+            "prize": 150,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Hanoi",
+            "destination": "Vientiane",
+            "transport_method": "flight",
+            "prize": 180,
+            "scales": false,
+            "time_spent": 4
+        },
+        {
+            "origin": "Saigon",
+            "destination": "Hanoi",
+            "transport_method": "flight",
+            "prize": 100,
+            "scales": false,
+            "time_spent": 2
+        },
+        {
+            "origin": "Saigon",
+            "destination": "Phnom Penh",
+            "transport_method": "bus",
+            "prize": 50,
+            "scales": false,
+            "time_spent": 6
+        },
+        {
+            "origin": "Saigon",
+            "destination": "Bangkok",
+            "transport_method": "flight",
+            "prize": 130,
+            "scales": false,
+            "time_spent": 2
+        },
+        {
+            "origin": "Saigon",
+            "destination": "Vientiane",
+            "transport_method": "flight",
+            "prize": 160,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Phnom Penh",
+            "destination": "Hanoi",
+            "transport_method": "flight",
+            "prize": 120,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Phnom Penh",
+            "destination": "Saigon",
+            "transport_method": "bus",
+            "prize": 50,
+            "scales": false,
+            "time_spent": 6
+        },
+        {
+            "origin": "Phnom Penh",
+            "destination": "Bangkok",
+            "transport_method": "train",
+            "prize": 75,
+            "scales": false,
+            "time_spent": 4
+        },
+        {
+            "origin": "Phnom Penh",
+            "destination": "Vientiane",
+            "transport_method": "flight",
+            "prize": 100,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Bangkok",
+            "destination": "Hanoi",
+            "transport_method": "flight",
+            "prize": 150,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Bangkok",
+            "destination": "Saigon",
+            "transport_method": "flight",
+            "prize": 130,
+            "scales": false,
+            "time_spent": 2
+        },
+        {
+            "origin": "Bangkok",
+            "destination": "Phnom Penh",
+            "transport_method": "train",
+            "prize": 75,
+            "scales": false,
+            "time_spent": 4
+        },
+        {
+            "origin": "Bangkok",
+            "destination": "Vientiane",
+            "transport_method": "flight",
+            "prize": 60,
+            "scales": false,
+            "time_spent": 2
+        },
+        {
+            "origin": "Vientiane",
+            "destination": "Hanoi",
+            "transport_method": "flight",
+            "prize": 180,
+            "scales": false,
+            "time_spent": 4
+        },
+        {
+            "origin": "Vientiane",
+            "destination": "Saigon",
+            "transport_method": "flight",
+            "prize": 160,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Vientiane",
+            "destination": "Phnom Penh",
+            "transport_method": "flight",
+            "prize": 100,
+            "scales": false,
+            "time_spent": 3
+        },
+        {
+            "origin": "Vientiane",
+            "destination": "Bangkok",
+            "transport_method": "flight",
+            "prize": 60,
+            "scales": false,
+            "time_spent": 2
+        }
+    ]
+}
