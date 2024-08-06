@@ -43,13 +43,13 @@ class TransportationMethod:
         self.time_spent = time_spent
 
 class Journey:
-    def __init__(self, visited_cities: List[City], duration: int, transport: List[TransportationMethod], housing: List[Housing], flights: Tuple[Flight, Flight]):
+    def __init__(self, visited_cities: List[City], duration: int, transport: List[TransportationMethod], housing: List[Housing], flights: Tuple[List[Flight], List[Flight]]):
         self.visited_cities = visited_cities
         self.duration = duration
         self.transport = transport
         self.housing = housing
         self.flights = flights
-    
+
     def total_transport_time(self):
         return sum(trans.time_spent for trans in self.transport) + sum(fli.time_spent for fli in self.flights)
     
