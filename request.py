@@ -13,16 +13,21 @@ def initialize_classes_from_json(json_path: str):
     locations = {city['name']: Location(latitud=city['location']['latitud'], longitud=city['location']['longitud'], city=cities[city['name']]) for city in data['cities']}
 
     # Create Flight instances
-    flights = [
-        Flight(
+    flights_from_madrid = []
+    flights_to_madrid = []
+
+    for flight in data['flights']:
+        flight_instance = Flight(
             origin=locations[flight['origin']],
             destination=locations[flight['destination']],
             prize=flight['prize'],
             scales=flight['scales'],
             time_spent=flight['time_spent']
         )
-        for flight in data['flights']
-    ]
+        if flight['origin'] == 'Madrid':
+            flights_from_madrid.append(flight_instance)
+        elif flight['destination'] == 'Madrid':
+            flights_to_madrid.append(flight_instance)
 
     # Create Housing instances
     housing = [
@@ -50,16 +55,14 @@ def initialize_classes_from_json(json_path: str):
         for transport in data['transportation_methods']
     ]
 
-    # Example journey, you may adjust the parameters accordingly
     journey = Journey(
         visited_cities=list(cities.values()),
         duration=10,
         transport=transportation_methods,
         housing=housing,
-        flights=(flights[0], flights[1])  # Assuming round trip for simplicity
+        flights=(flights_from_madrid, flights_to_madrid)  # Separate flights from Madrid and to Madrid
     )
 
     return journey
 
-# Example usage:
 journey = initialize_classes_from_json('data.json')
